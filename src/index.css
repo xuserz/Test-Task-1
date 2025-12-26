@@ -1,0 +1,27 @@
+html,
+body {
+  position       : relative;
+  margin         : 0;
+  padding        : 0;
+  display        : flex;
+  place-items    : center;
+  width          : 100%;
+  height         : 100%;
+  justify-content: center;
+  align-items    : center;
+}
+
+:root {
+  --font-common: -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    sans-serif,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    Segoe UI Symbol;
+  font-family: var(--font-common);
+}

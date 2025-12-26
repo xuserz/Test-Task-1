@@ -1,0 +1,24 @@
+.Cell {
+  display: flex;
+
+  position: relative;
+  width   : 100%;
+
+  background-color: red;
+
+  gap: 10px;
+}
+
+.Cell__in {
+  text-align: start;
+
+  position: relative;
+  overflow: hidden;
+  width   : 100%;
+}
+
+.Cell__title {
+  white-space  : nowrap;
+  text-overflow: ellipsis;
+  overflow     : hidden;
+}

@@ -1,0 +1,86 @@
+.Card {
+  position  : relative;
+  box-sizing: border-box;
+
+  display        : flex;
+  flex-direction : column;
+  justify-content: start;
+  align-items    : center;
+
+  background-color: #f5f5f5;
+  border          : solid 1px #ececec;
+
+  border-radius: 13px;
+  padding      : 10px;
+  margin-top   : 40px;
+}
+
+.Card__in {
+  position      : relative;
+  display       : flex;
+  flex-direction: column;
+  height        : 100%;
+}
+
+.Card__title {
+  font-size  : 16px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.Card__subtitle {
+  padding-top: 4px;
+  font-size  : 14px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.Card__icon {
+  margin-top: -50px;
+  padding   : 0px 10px;
+
+  aspect-ratio: 1 / 1;
+  height      : 100%;
+  min-height  : 140px;
+}
+
+.Card__bottom {
+  margin-top     : auto;
+  padding-top    : 16px;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.Card__price {
+  font-size  : 14px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.Card__button {
+  position : relative;
+  width    : auto;
+  min-width: auto;
+}
+
+.Card__button_check {
+  position : absolute;
+  opacity  : 0;
+  transform: scale(0.6);
+}
+
+.Card__button_plus,
+.Card__button_check {
+  transition: 0.2s;
+}
+
+.Card__button--selected .Card__button_check {
+  opacity  : 1;
+  transform: scale(1);
+}
+
+.Card__button--selected .Card__button_plus {
+  opacity  : 0;
+  transform: scale(0.6);
+}
